@@ -1,0 +1,39 @@
+Factory 
+
+A factory operates S shifts per day for D days, and workers receive performance bonuses based on the number of good and defective products produced during each shift. The number of good products is calculated by subtracting defective products from total production. If a shift produces at least 90 good products with no more than 3 defective products, the bonus is 150 Tk. Otherwise, if the shift produces at least 70 good products with no more than 7 defective products, the bonus is 80 Tk. Shifts that do not satisfy either condition receive no bonus. Write a C program using nested loops to evaluate production performance for all shifts across all days. For every shift, take the total number of produced products and defective products as input and calculate the bonus using a user-defined function named calculateBonus(). Display the bonus for each shift and the total bonus for each day. Finally, display the overall bonus amount, number of shifts receiving 150 Tk, number of shifts receiving no bonus, and the day with the highest total bonus.
+
+Sample Input
+Enter number of days (D): 2
+Enter shifts per day (S): 2
+
+Day 1 - Shift 1
+Enter total produced: 93
+Enter defective products: 3
+
+Day 1 - Shift 2
+Enter total produced: 78
+Enter defective products: 6
+
+Day 2 - Shift 1
+Enter total produced: 85
+Enter defective products: 12
+
+Day 2 - Shift 2
+Enter total produced: 100
+Enter defective products: 2
+
+Sample Output
+Day 1, Shift 1: 150 Tk
+Day 1, Shift 2: 80 Tk
+Day 1 total bonus: 230 Tk
+
+Day 2, Shift 1: 0 Tk
+Day 2, Shift 2: 150 Tk
+Day 2 total bonus: 150 Tk
+
+Overall bonus: 380 Tk
+Shifts receiving 150 Tk: 2
+Shifts receiving no bonus: 1
+Highest bonus: Day 1 (230 Tk)
+
+
